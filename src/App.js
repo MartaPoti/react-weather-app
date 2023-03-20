@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Weather from "./weather"
 import './App.css';
 
@@ -6,12 +6,11 @@ import './App.css';
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
-     
-<Weather/>
-     <footer>This project was coded by {" "} Marta Potulska and is opensourced on {" "} <a href="https://github.com/MartaPoti/react-weather-app"> GitHub</a>
-     </footer>
-     </div>
+    <div className="container">
+     <Weather defaultCity="Paris"/>
+    <footer>This project was coded by {" "} Marta Potulska and is opensourced on {" "} <a href="https://github.com/MartaPoti/react-weather-app"> GitHub</a>
+    </footer>
+    </div>
     </div>
   );
 }
