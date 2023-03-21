@@ -2,21 +2,15 @@
     border:1px solid #dadde1;
     border-radius: 6px;
     color:rgb(135, 135, 135);
-    padding: 16px;
-    
+    padding: 16px;    
 }
 
-.Weather form {
-    
-}
 
 .Weather h1 {
-
     font-weight: 200;
     font-size: 24px;
     line-height: 29px;
     margin: 20px 0 0 0;
-
 }
 
 .Weather ul {
@@ -36,9 +30,9 @@
 
 .Weather img {
    height: 56px;
-   weight: 56px;
-    display: inline-block;
-    margin-right: 6px;
+   width: 56px;
+   display: inline-block;
+   margin-right: 6px;
     
 }
 
