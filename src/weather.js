@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css';
 import './Weather.css';
-import WeatherInfo from "./weatherInfo";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather (props) {
 const [weather,setWeather]=useState({ready:false });
@@ -14,17 +14,14 @@ function search(){
     axios.get(apiUrl).then(handleResponse)
 
 }
-
 function handleSubmit (event) {
     event.preventDefault()
-    search();
+    search()
 }
 function handleCityChange(event){
 setCity(event.target.value)
 }
     function handleResponse (response) {
-
-        console.log(response.data);
    
         setWeather({
             ready: true,

@@ -16,11 +16,11 @@ let minutes= (props.date.getMinutes())
 if (hours<10) {
 hours='0${hours}'}
 if (minutes<10) {
-    minutes='0${minutes}'
+    minutes= '0${minutes}'
 }
 
 return (<div>
-    {day},{hours}:{minutes}
+    {day},{" "}{hours}:{minutes}
 </div>);
 }
 
