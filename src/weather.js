@@ -3,6 +3,7 @@ import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css';
 import './Weather.css';
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather (props) {
 const [weather,setWeather]=useState({ready:false });
@@ -58,7 +59,7 @@ if (weather.ready){ return(
         </div>
     </form>
     <WeatherInfo data= {weather} />
-   
+    <WeatherForecast/>
 </div>);
 }
 
