@@ -8,7 +8,7 @@ export default function WeatherForecast(props){
     let [forecast,setForecast]=useState(null);
     
     useEffect(() => {
- setReady(false)
+      setReady(false)
     }, [props.city])
     
     function HandleResponse(response){
@@ -25,7 +25,7 @@ export default function WeatherForecast(props){
     <div className="row mt-4">
 
         {forecast.map(function(dailyForecast,index) {
-            if(index<5){
+            if (index < 5) {
             return (<div className="col Weekdays" key={index}>
             <DayForecast data={dailyForecast}/>
             </div>);
